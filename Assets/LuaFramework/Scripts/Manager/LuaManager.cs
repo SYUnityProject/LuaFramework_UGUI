@@ -104,7 +104,7 @@ namespace LuaFramework {
         }
 
         public object[] DoFile(string filename) {
-            return lua.DoFile(filename);
+            return lua.DoFile<object[]>(filename);
         }
 
         // Update is called once per frame
